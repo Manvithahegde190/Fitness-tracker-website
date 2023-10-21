@@ -1,0 +1,757 @@
+/* CSS styles */
+
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply a background image to Home section */
+.hero {
+
+    height: 110%;
+    width: 100%;
+    position: absolute; 
+    background-image: url('img/fitness-background.png'); 
+    background-size: cover;
+    background-position: center top; 
+    font-family: Arial, sans-serif;
+    color: #fff;
+
+}
+
+/* Header section */
+header {
+    background-color: rgba(255, 255, 255, 0.8); 
+    padding: 17px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 20px;
+}
+
+/* home content */
+.hero-content {
+  
+    margin-top: 1px;
+    text-align: left; 
+    padding: 80px 20px; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    width: 50%; 
+    position: absolute; 
+    height: 80%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.hero-content .cta-button {
+    margin-top: -10px; 
+}
+.hero-content p{
+    margin-top: -10px;
+    margin-top: 10px;
+}
+.hero-content h1{
+    margin-top: -220px;
+  
+}
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 15px; 
+    color: #fff;
+}
+
+.hero-content p {
+    font-size: 24px;
+    margin-bottom: 50px; 
+    color: #fff;
+}
+
+.cta-button {
+
+    display: inline-block;
+    padding: 10px 20px;
+    background-color:  #fd288d;;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    
+}
+
+
+/* About Us */
+.about-us {
+    margin-top: 800px;
+    display: flex;
+    align-items: center;
+    padding: 80px 10px;
+    background-color: #f9f9f9;
+}
+
+.about-image {
+    flex: 1;
+    text-align: center;
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; 
+}
+
+.about-content {
+    flex: 2;
+    width: 50%;
+    height: 470px;
+    padding: 100px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.about-content h2 {
+    font-size: 40px;
+    color: #333;
+    margin-bottom: 20px;
+    text-decoration: underline solid #fd288d; 
+
+}
+
+.about-description {
+    font-size: 19px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Add animation to the "About Us" section */
+.about-us {
+    animation: fadeInUp 1s ease; /* Apply fade-in animation */
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* "Workouts and Exercises" section */
+.workouts-and-exercises {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 80px 0;
+    background-color: #f9f9f9;
+    position: relative;
+}
+
+.workouts-image {
+    width: 100%;
+    max-height: 800px;
+    position: relative;
+    overflow: hidden; 
+}
+
+.workouts-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    filter: blur(5px);
+}
+
+.image-overlay {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(105, 98, 98, 0.7);
+}
+
+.image-text {
+    padding: 10px;
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the text precisely */
+    width: 80%; 
+    text-align: center;
+}
+
+.image-text h2 {
+    font-size: 35px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.image-text p {
+    font-size: 20px;
+    color: #f8e4e4;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.image-text a {
+    margin-top: 20px;
+    display: inline-block;
+    padding: 15px 20px;
+    background-color: #fd288d;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-size: 20px;
+}
+
+.image-text a:hover {
+    background-color: #ff1477;
+}
+
+
+/*  key features section */
+.key-features-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.key-features-heading h2 {
+    font-size: 35px;
+    color: #333;
+}
+
+
+.features {
+    font-size: 50px;
+    text-align: center; 
+    margin-top: 10px;
+    margin-bottom: 100px;
+    background-color: #2b1821;
+    padding-top: 200px;
+    padding-bottom: 200px;
+
+}
+
+.feature {
+   
+    display: inline-block; 
+    text-align: center; 
+    margin: 20px;
+    max-width: 300px;
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    position: relative; 
+    overflow: hidden; 
+    transition: transform 0.3s ease-in-out; 
+}
+
+.feature:hover {
+    transform: scale(1.05); 
+}
+
+.feature img {
+    max-width: 100px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.feature h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.feature p {
+    font-size: 16px;
+    color: #555;
+}
+
+.key-features-heading h2 {
+    font-size: 50px;
+    position: relative;
+    display: inline-block;
+    color: #f5efef; 
+    text-decoration: underline solid #fd288d;
+}
+
+.key-features-heading h2:hover {
+    text-decoration: none; 
+}
+
+
+/* "Professional Trainers" section */
+.professional-trainers {
+    text-align: center;
+    margin-bottom: 100px;
+    padding: 30px 20px;
+    background-color: #f9f9f9;
+}
+
+.professional-trainers h2 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 40px;
+    text-decoration: underline solid #fd288d; 
+
+}
+.professional-trainers {
+    text-align: center;
+    padding: 100px 0;
+    background-color: #f9f9f9;
+}
+
+.professional-trainers h2 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.trainer-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.trainer-card {
+    height: 50vh;
+    flex-basis: calc(25% - 20px); 
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: 3px;
+    padding: 6px;
+    display: inline-block;
+    cursor: pointer;
+    transition: transform 0.3s ease; 
+    position: relative;
+}
+
+.trainer-card img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.trainer-card h3 {
+    font-size: 24px;
+    color: #333;
+    margin-top: 10px;
+}
+
+.trainer-card p {
+    font-size: 17px;
+    color: #555;
+}
+
+/* Style the social links */
+.social-links {
+    margin-top: 20px;
+}
+
+.social-link {
+    display: inline-block;
+    padding: 8px 10px;
+    background-color: #fd288d;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.social-link:hover {
+    background-color: #ff1477;
+}
+
+/* Pop-out effect on hover */
+.trainer-card:hover {
+    transform: scale(1.05); 
+}
+
+/* Style the social links on hover */
+.trainer-card:hover .social-links {
+    transform: translateY(0); /* Move social links upward on hover */
+    opacity: 1; /* Make social links visible on hover */
+    visibility: visible; /* Make social links visible on hover */
+    transition: transform 0.3s ease, opacity 0.3s ease, visibility 0.3s ease; /* Add smooth transitions */
+}
+
+/* Hide social links by default */
+.social-links {
+    transform: translateY(20px); 
+    opacity: 0; 
+    visibility: hidden; 
+}
+
+/* Contact section */
+.contact {
+    text-align: center;
+    padding: 80px 0;
+    background: linear-gradient(135deg, #fd288d, #2b1821); 
+    color: #fff; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contact-section {
+    flex: 1;
+    max-width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.contact h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+/* Style the social icons */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icon img {
+    max-width: 40px;
+}
+
+/* Style the location section */
+.address {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.icon img {
+    max-width: 40px;
+}
+
+/* Style the form section */
+.contact-section form {
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 18px;
+    display: block;
+    margin-bottom: 8px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea{
+    width: 90%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+input[type="text"]{
+    width: 90%;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.send-button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.send-button:hover {
+    background-color: #fd288d; /* Pink hover color */
+}
+
+/* Your existing styles */
+
+.teal-button {
+    background-color: teal;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s;
+}
+
+.teal-button:hover {
+    background-color: #008080;
+}
+
+
+/* Style the footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* CSS for smaller screens */
+@media only screen and (max-width: 600px) {
+    /* Header section */
+    header {
+        padding: 10px;
+    }
+    
+    nav ul li {
+        display: block;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    
+    .hero-content {
+        width: 80%;
+    }
+    
+    .about-us {
+        flex-direction: column;
+    }
+    
+    .about-image,
+    .about-content {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .about-content {
+        padding: 30px;
+    }
+    
+    .workouts-and-exercises,
+    .features,
+    .professional-trainers {
+        padding: 40px 10px;
+    }
+    
+    .feature {
+        margin: 20px 10px;
+    }
+    
+    .trainer-row {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .trainer-card {
+        flex-basis: 90%;
+        margin: 10px;
+    }
+    
+    .contact-section {
+        max-width: 100%;
+    }
+    
+    .contact-form input[type="text"],
+    .contact-form input[type="email"],
+    .contact-form textarea {
+        width: 100%;
+    }
+}
+
+/* CSS for larger screens */
+@media only screen and (min-width: 768px) {
+    .hero-content {
+        width: 50%;
+    }
+    
+    .about-us {
+        flex-direction: row;
+    }
+    
+    .about-image,
+    .about-content {
+        width: 50%;
+    }
+    
+    .workouts-and-exercises,
+    .features,
+    .professional-trainers {
+        padding: 80px 20px;
+    }
+    
+    .feature {
+        margin: 20px;
+    }
+    
+    .trainer-row {
+        flex-direction: row;
+        align-items: stretch;
+    }
+    
+    .trainer-card {
+        flex-basis: calc(25% - 20px);
+        margin: 3px;
+    }
+    
+    .contact-section {
+        max-width: 50%;
+    }
+}
+/* CSS for smaller screens */
+@media only screen and (max-width: 600px) {
+    .tracker {
+        padding: 15px;
+    }
+
+    .form-container {
+        padding-top: 50px;
+        padding-bottom: 30px;
+    }
+
+    form label {
+        font-size: 16px;
+    }
+
+    form input {
+        width: 100%;
+    }
+
+    #workout-summary {
+        margin-top: 20px;
+    }
+
+    #workout-list li {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    #total-duration {
+        font-size: 16px;
+    }
+}
+
+/* CSS for larger screens */
+@media only screen and (min-width: 768px) {
+    .tracker {
+        padding: 20px;
+    }
+
+    .form-container {
+        padding-top: 80px;
+        padding-bottom: 50px;
+    }
+
+    form label {
+        font-size: 18px;
+    }
+
+    form input {
+        width: 90%;
+    }
+
+    #workout-summary {
+        margin-top: 30px;
+    }
+
+    #workout-list li {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    #total-duration {
+        font-size: 20px;
+    }
+}
+/* CSS for smaller screens */
+@media only screen and (max-width: 600px) {
+    .form-container {
+        padding-top: 50px;
+        padding-bottom: 30px;
+    }
+
+    .form-container h2 {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+    label {
+        font-size: 16px;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="email"] {
+        width: 100%;
+    }
+
+    .pink-button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
+
+/* CSS for larger screens */
+@media only screen and (min-width: 768px) {
+    .form-container {
+        padding-top: 80px;
+        padding-bottom: 50px;
+    }
+
+    .form-container h2 {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    label {
+        font-size: 18px;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="email"] {
+        width: 90%;
+    }
+
+    .pink-button {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+}
